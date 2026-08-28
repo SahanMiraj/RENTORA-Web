@@ -1,0 +1,93 @@
+/* =========================================
+   1. GENERAL STYLES (මුළු පිටුවටම)
+   ========================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background-color: #f4f4f9; }
+
+/* =========================================
+   2. NAVBAR STYLES (උඩ තියෙන මෙනු එක)
+   ========================================= */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background-color: #000080; padding: 15px 50px; color: white;
+}
+.logo-img { 
+  height: 80px; /* Logo එක ලස්සනට ගාණට පේන්න */
+  cursor: pointer; 
+}
+.nav-links { list-style: none; display: flex; gap: 20px; align-items: center; }
+.nav-links li { cursor: pointer; transition: 0.3s; font-weight: bold; }
+.nav-links li:hover { color: #FFA500; }
+
+/* =========================================
+   3. HERO SECTION (HOME PAGE එකේ බැනර් එක)
+   ========================================= */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 128, 0.7), rgba(0, 0, 128, 0.7)), 
+              url('/hero.jpg') center/cover;
+  height: 500px; display: flex; align-items: center; justify-content: center;
+  text-align: center; color: white; padding: 20px;
+}
+.hero-content h1 { font-size: 56px; margin-bottom: 15px; color: #FFA500; }
+.hero-content p { font-size: 22px; margin-bottom: 30px; }
+.hero-btn {
+  padding: 12px 30px; font-size: 20px; background-color: #FFA500;
+  color: #000080; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;
+}
+.hero-btn:hover { background-color: white; }
+
+/* =========================================
+   4. ITEMS GRID (බඩු ලැයිස්තුව පෙන්නන තැන)
+   ========================================= */
+.main-content { padding: 50px; text-align: center; }
+.section-title { color: #000080; margin-bottom: 40px; font-size: 36px; }
+.items-grid { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+.item-card {
+  background: white; border-radius: 10px; width: 300px; padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); border-bottom: 5px solid #FFA500;
+  transition: transform 0.3s, box-shadow 0.3s; text-align: left;
+}
+.item-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); } 
+.item-title { color: #000080; margin-bottom: 10px; font-size: 20px; }
+.item-price { color: #FFA500; margin: 15px 0; font-size: 22px; font-weight: bold;}
+.rent-btn {
+  width: 100%; padding: 10px; background-color: #000080; color: white;
+  border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px;
+}
+.rent-btn:hover { background-color: #FFA500; color: #000080; }
+
+/* =========================================
+   5. AUTH PAGE (LOGIN / REGISTER)
+   ========================================= */
+.auth-container {
+  display: flex; justify-content: center; align-items: center;
+  min-height: 70vh; padding: 40px 20px;
+}
+.auth-card {
+  background: white; padding: 40px; border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%;
+  max-width: 450px; border-top: 6px solid #FFA500;
+}
+.auth-tabs { display: flex; margin-bottom: 30px; background: #f4f4f9; border-radius: 8px; padding: 5px; }
+.tab-btn {
+  flex: 1; padding: 10px; border: none; background: transparent;
+  font-weight: bold; cursor: pointer; border-radius: 6px; color: #555; transition: 0.3s;
+}
+.tab-btn.active { background: #000080; color: white; }
+.auth-title { color: #000080; margin-bottom: 25px; font-size: 24px; text-align: center; }
+.auth-form .form-group { margin-bottom: 20px; text-align: left; }
+.auth-form label { display: block; margin-bottom: 8px; color: #333; font-weight: bold; }
+.auth-form input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+.auth-form input:focus { outline: none; border-color: #000080; }
+.auth-submit-btn {
+  width: 100%; padding: 12px; background-color: #FFA500; color: #000080;
+  border: none; border-radius: 6px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.auth-submit-btn:hover { background-color: #000080; color: white; }
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+.footer {
+  background-color: #000080; color: white; text-align: center; padding: 20px; margin-top: 40px;
+}
